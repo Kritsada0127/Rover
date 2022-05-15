@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Rover</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div id="display"></div>
+                <label for="size">Map size </label>
+                <input type="number" id="size" name="size">
+                <button onclick="getVal();">Submit</button><br><br>
+                
+                <button onclick="controlL();" id="L" value="L">Turn left</button>
+                <button onclick="controlF();" id="F" value="F">Forward</button>
+                <button onclick="controlR();" id="R" value="R">Turn right</button><br><br>
+                
+                <label for="result">Result </label><br> <input type="text" id="res" name="res" onclick="this.value = '' ">
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
